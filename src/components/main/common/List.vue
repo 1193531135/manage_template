@@ -52,7 +52,6 @@ export default {
     created() {
         this.nowPath = this.$route.path;
         this.listdom = single.getRouterName(this.$router);
-        console.log(this.listdom);
     },
     beforeMount() {},
 };

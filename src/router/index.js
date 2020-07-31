@@ -6,6 +6,10 @@ Vue.use(Router)
 export default new Router({
     routes:[
         {
+            path:'/login',
+            component:re => require(['../components/main/common/Login.vue'],re)
+        },
+        {
             path:'/',
             redirect:'/main'
         },

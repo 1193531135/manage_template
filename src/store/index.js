@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     strict: true,
     state:{
-        ads:123,
+        token:null,                //存放token
         defineNowPath:'/main',    //基础页面路由
         nowPath:'/main',          //当前页面路由
         showDom:[],         //给Tab的数据

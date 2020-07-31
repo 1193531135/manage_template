@@ -16,7 +16,7 @@ export default {
       return{
           headeimg:require('../../../assets/default_head.jpg')
       }
-  }
+  },
 };
 </script>
 

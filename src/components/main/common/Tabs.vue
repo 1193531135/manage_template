@@ -69,7 +69,6 @@ export default {
         }
     },
     created() {
-        console.log("showDom", this.editableTabs);
     },
 };
 </script>
