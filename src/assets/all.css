@@ -2,3 +2,26 @@
     margin: 0;
     padding: 0;
 }
+*::-webkit-scrollbar{
+    width:7px;
+    height:10px;
+    /**/
+  }
+  /* 滑轮轨道 */
+  *::-webkit-scrollbar-track{
+    background: white;
+    border-radius:2px;
+  }
+  /* 滑块样式 */
+  *::-webkit-scrollbar-thumb{     
+    background: rgb(221,222,224);
+    border-radius:20px;
+    cursor: pointer !important;
+  }
+  *::-webkit-scrollbar-thumb:hover{
+    background: rgb(199,201,204);
+    cursor: pointer;
+  }
+  *::-webkit-scrollbar-corner{
+    background: #179a16;
+  }
