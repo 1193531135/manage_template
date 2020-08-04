@@ -9,7 +9,7 @@
             <div class="vertical_wall"></div>
             <div class="nowpage">
                 <tabs></tabs>
-                <div :style="'min-height:'+(hei-96)+'px'">
+                <div class="con" :style="'min-height:'+(hei-96)+'px'">
                     <router-view />
                 </div>
             </div>
@@ -68,5 +68,8 @@ export default {
     box-sizing: border-box;
     min-width: 1300px;
     overflow-y: auto;
+}
+.con{
+    background-color: rgb(242,244,246);
 }
 </style>
