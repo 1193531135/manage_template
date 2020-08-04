@@ -74,4 +74,13 @@ export default {
 </script>
 
 <style scoped>
+.el-tabs__header{
+    margin: 0;
+}
+.aaa{
+    width: 100%;
+}
+.aaa >>> .el-tabs__header{
+    background-color: white;
+}
 </style>

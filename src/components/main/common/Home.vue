@@ -7,9 +7,9 @@
                 <list></list>
             </div>
             <div class="vertical_wall"></div>
-            <div class="nowpage" :style="'min-height:'+(hei-40)+'px'">
+            <div class="nowpage">
                 <tabs></tabs>
-                <div>
+                <div :style="'min-height:'+(hei-96)+'px'">
                     <router-view />
                 </div>
             </div>
@@ -65,9 +65,8 @@ export default {
 }
 .nowpage{
     width: 85%;
-    background-color: white;
     box-sizing: border-box;
     min-width: 1300px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 </style>

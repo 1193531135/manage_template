@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>tax_compute</div>
+        <div class="table"></div>
     </div>
 </template>
 

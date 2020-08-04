@@ -8,7 +8,7 @@ export default new Vuex.Store({
     state:{
         token:null,                //存放token
         defineNowPath:'/main',    //基础页面路由
-        nowPath:'/main',          //当前页面路由
+        nowPath:'/tax_compute',          //当前页面路由
         showDom:[],         //给Tab的数据
         allDom:[]    //全部的dom
     },
