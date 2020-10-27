@@ -6,10 +6,11 @@
 ![内部展示](./demo_img/main.gif "主要页面演示")
 ### 安装&运行
 download该项目后，根目录下，`npm install` 即可
+
 输入`npm run serve`后运行该项目
 
 ### 新增页面
-创建组件后，在路由文件夹 route 下 index.js 文件中`routes`中 `meta`为 `start`的对象中的`children` 数组中引入 \n
+创建组件后，在路由文件夹 route 下 index.js 文件中`routes`中 `meta`为 `start`的对象中的`children` 数组中引入 
 
 children数组中的配置项
 |key|数据类型|描述|
