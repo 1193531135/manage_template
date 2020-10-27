@@ -96,6 +96,10 @@ export default {
     line-height: 2.5rem;
     position: relative;
 }
+.movedialog >>> .dialog_move_end_alert > div:active{
+    background-color: rgb(230,230,230);
+    border-radius: 0 0 16px 16px;
+}
 .movedialog >>> .dialog_move_end_confirm >div:nth-last-child(n+3){
     float: left;
     width: 50%;
