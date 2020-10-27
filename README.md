@@ -3,10 +3,14 @@
 ### 登陆界面展示
 ![登录演示](./demo_img/login_image.gif "登录演示")
 ### 内部页面样式展示
-![主要页面演示](./demo_img/main.gif "主要页面演示")
+![内部展示](./demo_img/main.gif "主要页面演示")
+### 安装&运行
+download该项目后，根目录下，`npm install` 即可
+输入`npm run serve`后运行该项目
 
-## 用法1 新增页面
-创建组件后，在路由`routes`中 `meta`为 `start`的对象中的`children` 中引入 
+### 新增页面
+创建组件后，在路由文件夹 route 下 index.js 文件中`routes`中 `meta`为 `start`的对象中的`children` 数组中引入 \n
+
 children数组中的配置项
 |key|数据类型|描述|
 |-|-|-|
@@ -16,7 +20,7 @@ children数组中的配置项
 二级标签在需要加入二级标签的标签中设置children，在children中相同配置
 <font color="red">!注意目前仅最多支持二级标签</font>
 
-## 初始配置
+### 初始配置
 在vuex文件 src/store/index.js 下中的 state
 |key|数据类型|描述|
 |-|-|-|

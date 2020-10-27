@@ -1,6 +1,6 @@
 
-import router from './router'
-import store from './store'
+import router from '../../router'
+import store from '../../store'
 export default {
     getRouterName(router) {      //获取所需要被列表渲染的对象结构
         let op = router.options.routes

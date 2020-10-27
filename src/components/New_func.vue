@@ -18,11 +18,11 @@ export default {
     padding: 40px;
 }
 .table{
-    width: 1065px;
-    height: 500px;
+    width: 80%;
     background-color: white;
     margin: auto;
     box-sizing: border-box;
     padding: 40px 0 0 0 ;
+    height: 1000px;
 }
 </style>

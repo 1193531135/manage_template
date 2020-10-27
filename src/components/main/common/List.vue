@@ -34,7 +34,7 @@
     </div>
 </template>
 <script>
-import single from "../../../single";
+import single from "../../../assets/js/single";
 export default {
     data() {
         return {
@@ -45,6 +45,7 @@ export default {
     methods: {
         cutPage(e) {
             single.cutPage(e);
+            this.$emit('clickbtn')
         },
         changeListStyle(e) {
             let classList = e.path[0].classList;
@@ -60,6 +61,7 @@ export default {
             }
         },
         HiddenList(e) {
+            if(!e.fromElement){return false}
             let classList = e.fromElement.classList
             for(let i = 0; i < classList.length ;i++){
                 if(
@@ -96,6 +98,9 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width:769px){
+    .lie_line{display: none !important;}
+}
 .lie_line {
     width: 5px;
     background-color: #3b8cff;
@@ -122,6 +127,9 @@ export default {
 }
 .con >>> .el-menu-item-group__title {
     padding: 0;
+}
+.con >>> .el-menu-item-group{
+    overflow: hidden;
 }
 .kuai:hover {
     color: white;

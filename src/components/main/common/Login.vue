@@ -11,6 +11,18 @@
                 </div>
                 <el-button class="btn" type="primary" @click="login">登录</el-button>
             </div>
+            <div class="mobile_c">
+                <div class="mobile_c_title">后台管理系统</div>
+                <p style="height:1rem"></p>
+                <div class="input2">
+                    <input placeholder="账号" v-model="account"/>
+                </div>
+                <div class="input2">
+                    <input  placeholder="密码" v-model="password" type="password"/>
+                </div>
+                <p style="height:3rem"></p>
+                <el-button class="btn" type="primary" @click="login">登录</el-button>
+            </div>
         </div>
     </div>
 </template>
@@ -27,7 +39,9 @@ export default {
     methods:{
         login(){
             //一段请求
+            let loading = this.$loading()
             setTimeout(() => {
+                loading.close()
                 //成功后把回调token存入store
                 let token = 123
                 this.$store.commit('modifyData',{name:'token',newdata:token})
@@ -39,10 +53,10 @@ export default {
         },
         localDown(token){
             sessionStorage.setItem('token',token)
-        }
+        },
     },
     created(){
-        this.hei = document.documentElement.clientHeight
+        this.hei = this.$store.state.hei
     }
 }
 </script>
@@ -52,6 +66,54 @@ export default {
     height: 500px;
     width: 100%;
 }
+@media screen and (max-width:769px){
+    .conta2{display: none;}
+    .mobile_c{
+        background-color: white;
+        width: 70%;
+        height: 16rem;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -10rem 0 0 -35%;
+    }
+    .mobile_c_title{
+        position: absolute;
+        width: 100%;
+        top: -2rem;
+        color: white;
+    }
+    .input2{
+        width: 80%;
+        margin: auto;
+        height: 3rem;
+        line-height: 3rem;
+    }
+    .input2 > input{
+        /* border:none; */
+        outline: none;
+        width: 100%;
+        height: 1.7rem;
+        /* line-height: 1.7rem; */
+        font-size: 0.8rem;
+        border:1px solid rgba(0,0,0,0.15);
+        border-radius: 5px;
+        padding-left: 0.4rem;
+        box-sizing:border-box;
+    }
+    .input2 > input:focus{
+        /* border: 1px solid rgb(102,177,255); */
+        border: 1px solid red;
+    }
+    .btn{
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width:769px){
+.mobile_c{display: none;}
 .conta2{
     width: 380px;
     height: 240px;
@@ -98,5 +160,6 @@ export default {
     width: 80%;
     height: 37px;
     color: white;
+}
 }
 </style>

@@ -20,20 +20,20 @@ export default new Router({
             children:[
                 {
                     path:'/main',
-                    component:re => require(['../components/main/First.vue'],re),
+                    component:re => require(['../components/First.vue'],re),
                     meta:'首页',icon:'el-icon-switch-button'
                 },
                 {
-                    meta:'税务功能',
+                    meta:'功能1',
                     icon:'el-icon-money',
                     path:'/tax_manage',
-                    component:re => require(['../components/main/Tax_manage.vue'],re),
+                    component:re => require(['../components/Tax_manage.vue'],re),
                     children:[
                         {
-                            meta:'税务计算',
+                            meta:'功能1——1',
                             icon:'el-icon-coin',
                             path:'/tax_compute',
-                            component:re => require(['../components/main/func/tax_compute.vue'],re),
+                            component:re => require(['../components/tax_compute.vue'],re),
                         }
                     ]
                 },
@@ -41,7 +41,7 @@ export default new Router({
                     meta:'新功能',
                     icon:'el-icon-circle-plus-outline',
                     path:'/new_function',
-                    component:re => require(['../components/main/New_func.vue'],re)
+                    component:re => require(['../components/New_func.vue'],re)
                 },
             ]
         }

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import single from '../../../single'
+import single from '../../../assets/js/single'
 export default {
     name: "Tabs",
     data() {
