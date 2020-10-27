@@ -78,7 +78,7 @@ children数组中的配置项
 
 option对象配置
 |key|数据类型|描述|默认值|
-|-|-|-|
+|-|-|-|-|
 |show|Boolean|token作为登录验证和页面刷新验证|true|
 |title|String|标题|标题|
 |message|String|提示内容|内容|
