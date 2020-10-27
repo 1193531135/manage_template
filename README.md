@@ -82,7 +82,7 @@ option对象配置
 |show|Boolean|token作为登录验证和页面刷新验证|true|
 |title|String|标题|标题|
 |message|String|提示内容|内容|
-|type|Boolean|`false`为confirm类型提示，`true`为alert类型提示|内容|
+|type|Boolean|`false`为confirm类型提示，`true`为alert类型提示|false|
 |success|function|用户点击确认后执行的函数||
 |cancel|function|用户点击取消后执行的函数||
 ### 初始配置
